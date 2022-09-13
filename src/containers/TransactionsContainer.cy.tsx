@@ -12,7 +12,7 @@ describe("Transactions Container", () => {
     cy.get("[data-test*=empty-list-header]").should("exist");
   });
   it("should render public transactions", () => {
-    cy.intercept("https://venmo-clone.vercel.app/:3001/transactions/*", {
+    cy.intercept("https://venmo-clone.vercel.app:3001/transactions/*", {
       fixture: "public-transactions.json",
     });
     mount(
@@ -24,7 +24,7 @@ describe("Transactions Container", () => {
     cy.get(".MuiListSubheader-root").should("contain", "Public");
   });
   it("should render contacts transactions", () => {
-    cy.intercept("https://venmo-clone.vercel.app/:3001/transactions/*", {
+    cy.intercept("https://venmo-clone.vercel.app:3001/transactions/*", {
       fixture: "public-transactions.json",
     });
     mount(
@@ -36,7 +36,7 @@ describe("Transactions Container", () => {
     cy.get(".MuiListSubheader-root").should("contain", "Contacts");
   });
   it("should render personal transactions", () => {
-    cy.intercept("https://venmo-clone.vercel.app/:3001/transactions/*", {
+    cy.intercept("https://venmo-clone.vercel.app:3001/transactions/*", {
       fixture: "public-transactions.json",
     });
     mount(

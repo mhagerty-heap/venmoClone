@@ -7,7 +7,7 @@ export const publicTransactionsMachine = dataMachine("publicTransactions").withC
   services: {
     fetchData: async (ctx, event: any) => {
       const payload = omit("type", event);
-      const resp = await httpClient.get(`https://venmo-clone.vercel.app/:${backendPort}/transactions/public`, {
+      const resp = await httpClient.get(`https://venmo-clone.vercel.app:${backendPort}/transactions/public`, {
         params: !isEmpty(payload) ? payload : undefined,
       });
       return resp.data;

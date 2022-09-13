@@ -29,7 +29,7 @@ Cypress.Commands.add("loginByOktaApi", (username: string, password?: string) => 
     const config = {
       issuer: `https://${Cypress.env("okta_domain")}/oauth2/default`,
       clientId: Cypress.env("okta_client_id"),
-      redirectUri: `https://venmo-clone.vercel.app/:${frontendPort}/implicit/callback`,
+      redirectUri: `https://venmo-clone.vercel.app:${frontendPort}/implicit/callback`,
       scope: ["openid", "email", "profile"],
     };
 

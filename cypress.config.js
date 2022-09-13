@@ -17,11 +17,11 @@ const awsConfig = require(path.join(__dirname, "./aws-exports-es5.js"));
 module.exports = defineConfig({
   projectId: "7s5okt",
   env: {
-    apiUrl: "https://venmo-clone.vercel.app/:3001",
+    apiUrl: "https://venmo-clone.vercel.app:3001",
     mobileViewportWidthBreakpoint: 414,
     coverage: false,
     codeCoverage: {
-      url: "https://venmo-clone.vercel.app/:3001/__coverage__",
+      url: "https://venmo-clone.vercel.app:3001/__coverage__",
       exclude: "cypress/**/*.*",
     },
     defaultPassword: process.env.SEED_DEFAULT_USER_PASSWORD,
@@ -63,7 +63,7 @@ module.exports = defineConfig({
     },
   },
   e2e: {
-    baseUrl: "https://venmo-clone.vercel.app/:3000",
+    baseUrl: "https://venmo-clone.vercel.app:3000",
     specPattern: "cypress/tests/**/*.spec.{js,jsx,ts,tsx}",
     supportFile: "cypress/support/e2e.ts",
     viewportHeight: 1000,
