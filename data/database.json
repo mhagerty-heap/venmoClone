@@ -11,7 +11,7 @@
       "phoneNumber": "625-316-9882",
       "avatar": "https://cypress-realworld-app-svgs.s3.amazonaws.com/t45AiwidW.svg",
       "defaultPrivacyLevel": "public",
-      "balance": 168137,
+      "balance": 166637,
       "createdAt": "2019-08-27T23:47:05.637Z",
       "modifiedAt": "2020-05-21T11:02:22.857Z"
     },
@@ -56,7 +56,7 @@
       "phoneNumber": "974-916-8746",
       "avatar": "https://cypress-realworld-app-svgs.s3.amazonaws.com/24VniajY1y.svg",
       "defaultPrivacyLevel": "private",
-      "balance": 145779,
+      "balance": 147279,
       "createdAt": "2020-03-06T02:15:42.584Z",
       "modifiedAt": "2020-05-21T09:25:42.974Z"
     },
@@ -253,6 +253,17 @@
       "isDeleted": false,
       "createdAt": "2019-09-30T14:20:07.043Z",
       "modifiedAt": "2020-05-21T22:40:28.910Z"
+    },
+    {
+      "id": "Ll4vaghob",
+      "uuid": "5fff711d-19d7-4f28-8919-be5386e95019",
+      "userId": "t45AiwidW",
+      "bankName": "Bank of Ireland",
+      "accountNumber": "123456789101",
+      "routingNumber": "123412344",
+      "isDeleted": false,
+      "createdAt": "2022-09-13T18:36:10.488Z",
+      "modifiedAt": "2022-09-13T18:36:10.488Z"
     }
   ],
   "transactions": [
@@ -9855,6 +9866,31 @@
       "requestResolvedAt": "",
       "createdAt": "2019-06-27T22:24:04.794Z",
       "modifiedAt": "2020-05-21T04:58:44.494Z"
+    },
+    {
+      "id": "mMIx2cIj0",
+      "uuid": "c8f8ef73-cf6d-4e4e-bece-ca44cbfaeea5",
+      "amount": 1500,
+      "description": "Thanks, dude!",
+      "receiverId": "24VniajY1y",
+      "senderId": "t45AiwidW",
+      "privacyLevel": "public",
+      "status": "complete",
+      "createdAt": "2022-09-13T18:34:30.157Z",
+      "modifiedAt": "2022-09-13T18:34:30.157Z"
+    },
+    {
+      "id": "12aUTlaou",
+      "uuid": "f05b18be-8d2e-4b24-a5de-437be7ad2cfb",
+      "amount": 1000,
+      "description": "thanks again!",
+      "receiverId": "qywYp6hS0U",
+      "senderId": "t45AiwidW",
+      "privacyLevel": "public",
+      "status": "pending",
+      "requestStatus": "pending",
+      "createdAt": "2022-09-13T18:36:26.798Z",
+      "modifiedAt": "2022-09-13T18:36:26.798Z"
     }
   ],
   "likes": [
@@ -10078,7 +10114,7 @@
       "userId": "t45AiwidW",
       "transactionId": "b0mCj0O2EKHN",
       "status": "requested",
-      "isRead": false,
+      "isRead": true,
       "createdAt": "2019-11-25T00:43:47.170Z",
       "modifiedAt": "2020-05-21T02:47:36.259Z"
     },
@@ -10431,6 +10467,26 @@
       "isRead": false,
       "createdAt": "2019-10-19T20:50:49.292Z",
       "modifiedAt": "2020-05-21T21:00:50.192Z"
+    },
+    {
+      "id": "QRK-MeqAOm",
+      "uuid": "b50340d6-b883-457c-b61c-26f150ded981",
+      "userId": "24VniajY1y",
+      "transactionId": "mMIx2cIj0",
+      "status": "received",
+      "isRead": false,
+      "createdAt": "2022-09-13T18:34:30.171Z",
+      "modifiedAt": "2022-09-13T18:34:30.171Z"
+    },
+    {
+      "id": "yPmfxoTfiK",
+      "uuid": "5b3ebfe0-4d5f-4fdb-9a8d-3bfed2a5cbb0",
+      "userId": "qywYp6hS0U",
+      "transactionId": "12aUTlaou",
+      "status": "requested",
+      "isRead": false,
+      "createdAt": "2022-09-13T18:36:26.803Z",
+      "modifiedAt": "2022-09-13T18:36:26.803Z"
     }
   ],
   "banktransfers": [
