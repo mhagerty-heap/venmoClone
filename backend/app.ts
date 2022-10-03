@@ -28,7 +28,7 @@ import { frontendPort, getBackendPort } from "../src/utils/portUtils";
 require("dotenv").config();
 
 const corsOption = {
-  origin: `http://venmo-clone.vercel.app:${frontendPort}`,
+  origin: `http://localhost:${frontendPort}`,
   credentials: true,
 };
 

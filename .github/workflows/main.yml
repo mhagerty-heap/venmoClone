@@ -99,7 +99,7 @@ jobs:
         uses: cypress-io/github-action@v4
         with:
           start: yarn start:ci
-          wait-on: "http://venmo-clone.vercel.app:3000"
+          wait-on: "http://localhost:3000"
           wait-on-timeout: 120
           browser: chrome
           record: true
@@ -146,7 +146,7 @@ jobs:
         with:
           config: "viewportWidth=375,viewportHeight=667"
           start: yarn start:ci
-          wait-on: "http://venmo-clone.vercel.app:3000"
+          wait-on: "http://localhost:3000"
           wait-on-timeout: 120
           browser: chrome
           record: true
@@ -191,7 +191,7 @@ jobs:
         uses: cypress-io/github-action@v4
         with:
           start: yarn start:ci
-          wait-on: "http://venmo-clone.vercel.app:3000"
+          wait-on: "http://localhost:3000"
           wait-on-timeout: 120
           browser: firefox
           record: true
@@ -237,7 +237,7 @@ jobs:
         with:
           config: "viewportWidth=375,viewportHeight=667"
           start: yarn start:ci
-          wait-on: "http://venmo-clone.vercel.app:3000"
+          wait-on: "http://localhost:3000"
           wait-on-timeout: 120
           browser: firefox
           record: true
@@ -279,7 +279,7 @@ jobs:
         uses: cypress-io/github-action@v4
         with:
           start: yarn start:ci
-          wait-on: "http://venmo-clone.vercel.app:3000"
+          wait-on: "http://localhost:3000"
           wait-on-timeout: 120
           record: true
           parallel: true

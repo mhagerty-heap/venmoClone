@@ -107,13 +107,13 @@ yarn cypress:open
 >
 > ```json
 > {
->   "baseUrl": "http://venmo-clone.vercel.app:13000",
+>   "baseUrl": "http://localhost:13000",
 >   /* Omitted for brevity */
 >   "env": {
->     "apiUrl": "http://venmo-clone.vercel.app:13001",
+>     "apiUrl": "http://localhost:13001",
 >     /* Omitted for brevity */
 >     "codeCoverage": {
->       "url": "http://venmo-clone.vercel.app:13001/__coverage__"
+>       "url": "http://localhost:13001/__coverage__"
 >     }
 >   },
 >   "experimentalStudio": true
