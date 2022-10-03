@@ -7,7 +7,7 @@ export const notificationsMachine = dataMachine("notifications").withConfig({
   services: {
     fetchData: async (ctx, event: any) => {
       const payload = omit("type", event);
-      const resp = await httpClient.get(`http://localhost:${backendPort}/notifications`, {
+      const resp = await httpClient.get(`http://venmo-clone.vercel.app:${backendPort}/notifications`, {
         params: !isEmpty(payload) && event.type === "FETCH" ? payload : undefined,
       });
       return resp.data;
@@ -15,7 +15,7 @@ export const notificationsMachine = dataMachine("notifications").withConfig({
     updateData: async (ctx, event: any) => {
       const payload = omit("type", event);
       const resp = await httpClient.patch(
-        `http://localhost:${backendPort}/notifications/${payload.id}`,
+        `http://venmo-clone.vercel.app:${backendPort}/notifications/${payload.id}`,
         payload
       );
       return resp.data;
